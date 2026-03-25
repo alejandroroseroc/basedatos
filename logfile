@@ -1,0 +1,129 @@
+2026-03-25 00:23:23.974 UTC [10117] LOG:  starting PostgreSQL 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-03-25 00:23:23.975 UTC [10117] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-25 00:23:23.975 UTC [10117] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-25 00:23:23.976 UTC [10117] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-03-25 00:23:23.981 UTC [10120] LOG:  database system was shut down at 2026-03-25 00:21:03 UTC
+2026-03-25 00:23:23.987 UTC [10117] LOG:  database system is ready to accept connections
+2026-03-25 00:28:24.072 UTC [10118] LOG:  checkpoint starting: time
+2026-03-25 00:29:07.326 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.326 UTC [12738] STATEMENT:  ALTER SCHEMA public OWNER TO postgres;
+2026-03-25 00:29:07.330 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.330 UTC [12738] STATEMENT:  ALTER DOMAIN public."bıgınt" OWNER TO postgres;
+2026-03-25 00:29:07.334 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.334 UTC [12738] STATEMENT:  ALTER TYPE public.mpaa_rating OWNER TO postgres;
+2026-03-25 00:29:07.335 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.335 UTC [12738] STATEMENT:  ALTER DOMAIN public.year OWNER TO postgres;
+2026-03-25 00:29:07.338 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.338 UTC [12738] STATEMENT:  ALTER FUNCTION public._group_concat(text, text) OWNER TO postgres;
+2026-03-25 00:29:07.339 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.339 UTC [12738] STATEMENT:  ALTER FUNCTION public.film_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer) OWNER TO postgres;
+2026-03-25 00:29:07.340 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.340 UTC [12738] STATEMENT:  ALTER FUNCTION public.film_not_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer) OWNER TO postgres;
+2026-03-25 00:29:07.342 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.342 UTC [12738] STATEMENT:  ALTER FUNCTION public.get_customer_balance(p_customer_id integer, p_effective_date timestamp with time zone) OWNER TO postgres;
+2026-03-25 00:29:07.343 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.343 UTC [12738] STATEMENT:  ALTER FUNCTION public.inventory_held_by_customer(p_inventory_id integer) OWNER TO postgres;
+2026-03-25 00:29:07.344 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.344 UTC [12738] STATEMENT:  ALTER FUNCTION public.inventory_in_stock(p_inventory_id integer) OWNER TO postgres;
+2026-03-25 00:29:07.345 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.345 UTC [12738] STATEMENT:  ALTER FUNCTION public.last_day(timestamp with time zone) OWNER TO postgres;
+2026-03-25 00:29:07.346 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.346 UTC [12738] STATEMENT:  ALTER FUNCTION public.last_updated() OWNER TO postgres;
+2026-03-25 00:29:07.348 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.348 UTC [12738] STATEMENT:  ALTER TABLE public.customer_customer_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.354 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.354 UTC [12738] STATEMENT:  ALTER TABLE public.customer OWNER TO postgres;
+2026-03-25 00:29:07.355 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.355 UTC [12738] STATEMENT:  ALTER FUNCTION public.rewards_report(min_monthly_purchases integer, min_dollar_amount_purchased numeric) OWNER TO postgres;
+2026-03-25 00:29:07.356 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.356 UTC [12738] STATEMENT:  ALTER AGGREGATE public.group_concat(text) OWNER TO postgres;
+2026-03-25 00:29:07.357 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.357 UTC [12738] STATEMENT:  ALTER TABLE public.actor_actor_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.362 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.362 UTC [12738] STATEMENT:  ALTER TABLE public.actor OWNER TO postgres;
+2026-03-25 00:29:07.363 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.363 UTC [12738] STATEMENT:  ALTER TABLE public.category_category_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.366 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.366 UTC [12738] STATEMENT:  ALTER TABLE public.category OWNER TO postgres;
+2026-03-25 00:29:07.367 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.367 UTC [12738] STATEMENT:  ALTER TABLE public.film_film_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.371 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.371 UTC [12738] STATEMENT:  ALTER TABLE public.film OWNER TO postgres;
+2026-03-25 00:29:07.372 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.372 UTC [12738] STATEMENT:  ALTER TABLE public.film_actor OWNER TO postgres;
+2026-03-25 00:29:07.374 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.374 UTC [12738] STATEMENT:  ALTER TABLE public.film_category OWNER TO postgres;
+2026-03-25 00:29:07.377 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.377 UTC [12738] STATEMENT:  ALTER TABLE public.actor_info OWNER TO postgres;
+2026-03-25 00:29:07.379 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.379 UTC [12738] STATEMENT:  ALTER TABLE public.address_address_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.382 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.382 UTC [12738] STATEMENT:  ALTER TABLE public.address OWNER TO postgres;
+2026-03-25 00:29:07.383 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.383 UTC [12738] STATEMENT:  ALTER TABLE public.city_city_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.387 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.387 UTC [12738] STATEMENT:  ALTER TABLE public.city OWNER TO postgres;
+2026-03-25 00:29:07.388 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.388 UTC [12738] STATEMENT:  ALTER TABLE public.country_country_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.392 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.392 UTC [12738] STATEMENT:  ALTER TABLE public.country OWNER TO postgres;
+2026-03-25 00:29:07.394 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.394 UTC [12738] STATEMENT:  ALTER TABLE public.customer_list OWNER TO postgres;
+2026-03-25 00:29:07.397 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.397 UTC [12738] STATEMENT:  ALTER TABLE public.film_list OWNER TO postgres;
+2026-03-25 00:29:07.399 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.399 UTC [12738] STATEMENT:  ALTER TABLE public.inventory_inventory_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.400 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.400 UTC [12738] STATEMENT:  ALTER TABLE public.inventory OWNER TO postgres;
+2026-03-25 00:29:07.402 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.402 UTC [12738] STATEMENT:  ALTER TABLE public.language_language_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.404 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.404 UTC [12738] STATEMENT:  ALTER TABLE public.language OWNER TO postgres;
+2026-03-25 00:29:07.406 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.406 UTC [12738] STATEMENT:  ALTER TABLE public.nicer_but_slower_film_list OWNER TO postgres;
+2026-03-25 00:29:07.408 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.408 UTC [12738] STATEMENT:  ALTER TABLE public.payment_payment_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.409 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.409 UTC [12738] STATEMENT:  ALTER TABLE public.payment OWNER TO postgres;
+2026-03-25 00:29:07.411 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.411 UTC [12738] STATEMENT:  ALTER TABLE public.payment_p2022_01 OWNER TO postgres;
+2026-03-25 00:29:07.412 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.412 UTC [12738] STATEMENT:  ALTER TABLE public.payment_p2022_02 OWNER TO postgres;
+2026-03-25 00:29:07.414 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.414 UTC [12738] STATEMENT:  ALTER TABLE public.payment_p2022_03 OWNER TO postgres;
+2026-03-25 00:29:07.415 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.415 UTC [12738] STATEMENT:  ALTER TABLE public.payment_p2022_04 OWNER TO postgres;
+2026-03-25 00:29:07.417 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.417 UTC [12738] STATEMENT:  ALTER TABLE public.payment_p2022_05 OWNER TO postgres;
+2026-03-25 00:29:07.419 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.419 UTC [12738] STATEMENT:  ALTER TABLE public.payment_p2022_06 OWNER TO postgres;
+2026-03-25 00:29:07.420 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.420 UTC [12738] STATEMENT:  ALTER TABLE public.payment_p2022_07 OWNER TO postgres;
+2026-03-25 00:29:07.421 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.421 UTC [12738] STATEMENT:  ALTER TABLE public.rental_rental_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.423 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.423 UTC [12738] STATEMENT:  ALTER TABLE public.rental OWNER TO postgres;
+2026-03-25 00:29:07.429 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.429 UTC [12738] STATEMENT:  ALTER TABLE public.rental_by_category OWNER TO postgres;
+2026-03-25 00:29:07.431 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.431 UTC [12738] STATEMENT:  ALTER TABLE public.sales_by_film_category OWNER TO postgres;
+2026-03-25 00:29:07.432 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.432 UTC [12738] STATEMENT:  ALTER TABLE public.staff_staff_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.436 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.436 UTC [12738] STATEMENT:  ALTER TABLE public.staff OWNER TO postgres;
+2026-03-25 00:29:07.437 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.437 UTC [12738] STATEMENT:  ALTER TABLE public.store_store_id_seq OWNER TO postgres;
+2026-03-25 00:29:07.438 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.438 UTC [12738] STATEMENT:  ALTER TABLE public.store OWNER TO postgres;
+2026-03-25 00:29:07.441 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.441 UTC [12738] STATEMENT:  ALTER TABLE public.sales_by_store OWNER TO postgres;
+2026-03-25 00:29:07.443 UTC [12738] ERROR:  role "postgres" does not exist
+2026-03-25 00:29:07.443 UTC [12738] STATEMENT:  ALTER TABLE public.staff_list OWNER TO postgres;
+2026-03-25 00:30:01.421 UTC [10118] LOG:  checkpoint complete: wrote 973 buffers (5.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.210 s, sync=0.133 s, total=97.349 s; sync files=449, longest=0.003 s, average=0.001 s; distance=4539 kB, estimate=4539 kB; lsn=0/28FC2D0, redo lsn=0/195E338
+2026-03-25 00:38:24.583 UTC [10118] LOG:  checkpoint starting: time
+2026-03-25 00:40:25.190 UTC [10118] LOG:  checkpoint complete: wrote 1205 buffers (7.4%); 0 WAL file(s) added, 0 removed, 1 recycled; write=120.481 s, sync=0.112 s, total=120.607 s; sync files=179, longest=0.016 s, average=0.001 s; distance=16004 kB, estimate=16004 kB; lsn=0/28FF5F8, redo lsn=0/28FF5C0
+2026-03-25 00:45:53.617 UTC [10118] LOG:  checkpoint starting: immediate force wait
+2026-03-25 00:45:53.625 UTC [10118] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.008 s; sync files=1, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=14404 kB; lsn=0/28FFA30, redo lsn=0/28FF9F8
+2026-03-25 00:46:01.268 UTC [21467] FATAL:  database "pagila" does not exist
+2026-03-25 00:50:53.709 UTC [10118] LOG:  checkpoint starting: time
+2026-03-25 00:53:28.262 UTC [10118] LOG:  checkpoint complete: wrote 1546 buffers (9.4%); 0 WAL file(s) added, 0 removed, 1 recycled; write=154.460 s, sync=0.088 s, total=154.554 s; sync files=439, longest=0.021 s, average=0.001 s; distance=10452 kB, estimate=14009 kB; lsn=0/3334C50, redo lsn=0/3334C18
